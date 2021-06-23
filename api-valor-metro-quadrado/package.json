@@ -46,6 +46,7 @@
     "babel-plugin-transform-typescript-metadata": "^0.3.2",
     "jest": "^27.0.4",
     "ts-jest": "^27.0.3",
-    "babel-plugin-transform-class-properties": "^6.24.1"
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "tsconfig-paths": "^3.9.0"
   }
 }
