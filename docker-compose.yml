@@ -1,0 +1,36 @@
+version: "3"
+services: 
+   
+
+    # rabbitmq:
+    #   image: "rabbitmq:3.8-management-alpine"
+    #   container_name: nodejs-rabbitmq-rabbitmq
+    #   hostname: rabbitmq
+    #   ports:
+    #     - "15672:15672"
+    #     - "5672:5672"
+    #   volumes:
+    #     - "./.rabbitmq_data:/var/lib/rabbitmq/mnesia"
+    #   environment:
+    #     - RABBITMQ_DEFAULT_USER=admin
+    #     - RABBITMQ_DEFAULT_PASS=admin
+    
+    api01:
+      build: ./challenge-backend-ingaia/api-valor-metro-quadrado
+      command: yarn dev:server
+      ports: 
+          - "3001:3001"
+      volumes: 
+          - .:/usr/api-valor-metro-quadrado
+      # depends_on: 
+      #     - rabbitmq
+
+    api02:
+      build: ./challenge-backend-ingaia/api-calc-metro-quadrado
+      command: yarn dev:server
+      ports: 
+          - "3000:3000"
+      volumes: 
+          - .:/usr/api-calc-metro-quadrado
+      # depends_on: 
+      #   - rabbitmq
