@@ -1,0 +1,47 @@
+{
+  "name": "api-01",
+  "version": "1.0.0",
+  "description": "Api feita para retornar o valor do metro quadrado de um imóvel",
+  "main": "index.js",
+  "author": "Douglas Moura",
+  "license": "MIT",
+  "dependencies": {
+    "amqplib": "^0.8.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "supertest": "^6.1.3",
+    "swagger-jsdoc": "^6.1.0",
+    "swagger-ui-express": "^4.1.6",
+    "ts-node-dev": "^1.1.6",
+    "tsc": "^2.0.3",
+    "typescript": "^4.3.4"
+  },
+  "scripts": {
+    "dev:server": "ts-node-dev -r tsconfig-paths/register --inspect  --transpile-only --ignore-watch node_modules src/shared/infra/http/server.ts",
+    "test": "jest",
+    "build": "babel src --extensions \".ts\" --out-dir dist --copy-files",
+    "build:js": "tsc"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.5",
+    "@babel/core": "^7.14.6",
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "@babel/plugin-proposal-decorators": "^7.14.5",
+    "@babel/plugin-transform-reserved-words": "^7.14.5",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-flow": "^7.14.5",
+    "@babel/preset-typescript": "^7.14.5",
+    "@types/amqplib": "^0.8.0",
+    "@types/jest": "^26.0.23",
+    "@types/supertest": "^2.0.11",
+    "@types/swagger-jsdoc": "^6.0.0",
+    "@types/swagger-ui-express": "^4.1.2",
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "babel-plugin-transform-typescript-metadata": "^0.3.2",
+    "jest": "^27.0.4",
+    "ts-jest": "^27.0.3",
+    "tsconfig-paths": "^3.9.0"
+  }
+}

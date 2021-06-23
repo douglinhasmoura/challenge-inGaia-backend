@@ -1,0 +1,11 @@
+api-valor-metro-quadrado/node_modules
+api-valor-metro-quadrado/dist
+api-valor-metro-quadrado/coverage
+api-valor-metro-quadrado/docker-compose.yml
+api-valor-metro-quadrado/Dockerfile
+api-calc-metro-quadrado/node_modules
+api-calc-metro-quadrado/dist
+api-calc-metro-quadrado/coverage
+api-calc-metro-quadrado/.env.example
+api-calc-metro-quadrado/docker-compose.yml
+api-calc-metro-quadrado/Dockerfile
